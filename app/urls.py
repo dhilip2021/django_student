@@ -8,6 +8,8 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 router.register('get_student', StuidentViewset)
 
+
+
 urlpatterns = [
     # path('', index, name='index'),
     path('',include(router.urls))
